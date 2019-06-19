@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+    
+    <!-- Font awesome icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <!-- Hover.css -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    
+    <!-- Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Voyager Travel Buddy</title>
+</head>
+<body>
+ <div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">Your next adventure starts here...</span>
+  <div class="overlay-content">
+    <form action="action_page.php">
+      <input type="text" placeholder="Go Somewhere..." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+ 
+    <div id="map">
+        
+    </div>
+    
+ 
+    <div class="row">
+        <div id="locationField" class="col-6">
+            <input class="form-control" id="autocomplete" placeholder="Type a city, country or location..." type="text" />
+        </div>
+    
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" onchange="search();" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            What are you looking for?
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Hotels</a>
+            <a class="dropdown-item" href="#">Restaurants</a>
+            <a class="dropdown-item" href="#">Cafés</a>
+            <a class="dropdown-item" href="#">Bars</a>
+            <a class="dropdown-item" href="#">Parks</a>
+            <a class="dropdown-item" href="#">Museums</a>
+          </div>
+        </div>
+
+
+
+<!--
+        <div id="searchField" class="col-6 panel">
+        <select class="custom-select" onchange="search();" id="locations">
+            <option value="" disabled selected>What are you looking for?</option>
+            <option value="hotel">Hotels</option>
+        	<option value="restaurant">Restaurants</option>
+        	<option value="cafe">Cafés</option>
+        	<option value="bar">Bars</option>
+        	<option value="park">Parks</option>
+        	<option value="museum">Museums</option>
+    	</select>    
+    </div> 
+         -->
+         
+    <!-- Scripts: map.js, GoogleMaps API-->
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7lGdFbC_7GS84ztSaKVQttbaFZivDQJ4&callback=initMap&language=en-GB&region=GB"></script>
+    <script src="assets/js/maps.js"></script>
+
+</body>
+</body>
+</html>
+
+<!-- API Key AIzaSyB7lGdFbC_7GS84ztSaKVQttbaFZivDQJ4 -->
