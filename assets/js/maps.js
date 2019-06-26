@@ -1,14 +1,16 @@
+// Initialize Map API
+
 var map, infoWindow;
-function initMap() {
+  function initMap() {
     var map = new google.maps.Map(document.getElementById("map"), {
-        mapTypeId: 'roadmap',
-        zoom: 2.5,
+//      mapTypeId: 'roadmap',
+        zoom: 8,
         center: {lat: 40.518385783899, lng: -40.518385783899},
     });
-    
+  
      infoWindow = new google.maps.InfoWindow;
 
-// Try HTML5 geolocation.
+// For Geolocation -- Try HTML5 geolocation.
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
             var pos = {
@@ -28,7 +30,7 @@ function initMap() {
           handleLocationError(false, infoWindow, map.getCenter());
         }
       }
-      
+     
 // Set user geolocation/send error message.      
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         infoWindow.setPosition(pos);
@@ -38,5 +40,3 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         infoWindow.open(map);
       }
        
-
-      

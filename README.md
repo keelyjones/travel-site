@@ -21,17 +21,29 @@ Provide search results in a manner that is visually appealing for your user (by 
 * Make sure your site is as responsive as possible. You can test this by checking the site on different screen sizes and browsers. Please note that if you are building a data dashboard, only your chart containers are expected to be responsive. Charts using D3.js are not responsive as they are designed for desktop or large-screen viewing.
 * The site can also make use of CSS frameworks such as Bootstrap, just make sure you maintain a clear separation between the library code and your code.
 
+* Geolocation added
+* But default to centralised on West, language to GB
+* Modal
+* Dropdown search
+* Custom select amenities. 
+* Boostrap to simplify styling, keep things consistient and to utilise the responsive features.
 
 ### User Stories
 
-- As a user type, I want to perform an action, so that I can achieve a goal.
+- As a mobile user, using the app abroad and on the go, I would like to be able to quickly and simply navigate and search the site for the things I need, so that I can save time and roaming charges.
+- As a desktop user, planning my travel needs ahead of time, I want to be able to browse locations around the world in an asthetically pleasing, simple format, so that I can plan my next adventure.
+- As a traveller looking for places to eat or drink whilst on holiday, I want to be able to search for bars, cafes and restaurants in the destination I am travelling to - including opening times, websites and reviews/ratings, so that I am inspired.
+- As a traveller looking for accommodation, I want to be able to search for hotels in a specific location.
+- As a Western business traveler, I want to save time looking for food and accommodation in the area I am working, simply, in my own language, so I can book accomodation and dinner reservations for my trip seamlessly. 
+- As a lost traveller, I want to be able to use geolocation to work out what is nearby, so that I can make my way to a cafe or tourist site.
+- As a Personal Assistant, I want to be able to search for hotels based on location, in order to book something close to where my Executive needs to be.
 
 ### Wireframe
 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
-My initial design process can be seen here: https://wireframepro.mockflow.com/view/milestone-project-3-mockup
+My initial design process can be seen here: https://wireframepro.mockflow.com/view/keelyjones-milestone-project-3-wireframe
 I have tried to keep the design as simple as possible, with simple colour schemes, and the main focus of the app is the map itself.
 I have created mockups for both desktop and mobile versions of the application.
+I wanted to present an initial welcome message, a search feature, then the search results, creating a simple 3-step process for the user.
 
 ## Features
 
@@ -103,6 +115,8 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 ## Credits
 
+* GoogleMaps API documentation to help with Geolocation scripts
+* 
 ### Content
 - All text content is original.
 
